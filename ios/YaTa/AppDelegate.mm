@@ -14,6 +14,20 @@
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
+- (UIView *)createRootViewWithBridge:(RCTBridge *)bridge
+                          moduleName:(NSString *)moduleName
+                           initProps:(NSDictionary *)initProps
+{
+  UIView * rootView = [super createRootViewWithBridge:bridge moduleName:moduleName initProps:initProps];
+  
+  // workaround:
+  UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil];
+  UIViewController *vc = [sb instantiateInitialViewController];
+  rootView.backgroundColor = [UIColor colorWithRed: 0.98 green: 0.98 blue: 0.98 alpha: 1.00];
+
+  return rootView;
+}
+
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
 #if DEBUG
