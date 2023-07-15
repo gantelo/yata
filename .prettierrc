@@ -1,0 +1,14 @@
+{
+    "printWidth": 120,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "semi": true,
+    "endOfLine": "auto",
+    "useTabs": true,
+    "bracketSameLine": false,
+    "importOrder": ["^@(.*)$", "^[./]"],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+    "importOrderCaseInsensitive": true
+}

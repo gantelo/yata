@@ -1,0 +1,45 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true,
+		"jest/globals": true
+	},
+	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["react", "@typescript-eslint", "jest"],
+	"rules": {
+		"indent": ["error", "tab", { "SwitchCase": 1 }],
+		"quotes": ["error", "single", "avoid-escape"],
+		"semi": ["error", "always"],
+		"react/react-in-jsx-scope": "off",
+		"linebreak-style": 0,
+		"global-require": 0,
+		"eslint linebreak-style": [0, "error", "windows"],
+		"object-curly-spacing": ["error", "always"],
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 1,
+				"maxEOF": 0,
+				"maxBOF": 0
+			}
+		],
+		"jest/no-disabled-tests": "warn",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/valid-expect": "error",
+		"camelcase": ["error"],
+		"react/prop-types": "off",
+		"no-nested-ternary": "error",
+		"no-console": ["warn", { "allow": ["error"] }],
+		"react-hooks/exhaustive-deps": "off"
+	}
+}
