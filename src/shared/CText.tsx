@@ -17,13 +17,13 @@ const CText = ({
 }: React.PropsWithChildren<CTextProps>) => {
 	return (
 		<Text
-			{...rest}
 			style={{
 				...styles.font,
 				color,
 				fontSize: Sizes.fonts.size[fontSize],
-				fontWeight: Sizes.fonts.weight[weight],
+				fontWeight: Sizes.fonts.weight[weight] as never,
 			}}
+			{...rest}
 		>
 			{children}
 		</Text>

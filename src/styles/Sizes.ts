@@ -43,7 +43,7 @@ export const Sizes = {
 			medium: '500',
 			semibold: '600',
 			bold: '700',
-		} as never,
+		},
 	},
 	margin: {
 		md: horizontalScale(21),
