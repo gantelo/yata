@@ -1,10 +1,10 @@
 import { Header } from '@components';
 
-import { HeaderIcons, HeaderText } from '../molecules';
+import { HeaderIcons, HeaderText, HomeBgImage } from '../molecules';
 
 const HomeHeader = () => {
 	return (
-		<Header>
+		<Header HeaderImage={HomeBgImage}>
 			<HeaderIcons />
 			<HeaderText />
 		</Header>

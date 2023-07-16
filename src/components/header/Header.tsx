@@ -3,8 +3,17 @@ import { verticalScale } from 'src/styles/Sizes';
 
 import { Colors, Sizes } from '@styles';
 
-const Header = ({ children }: React.PropsWithChildren) => {
-	return <View style={styles.container}>{children}</View>;
+type HeaderProps = {
+	HeaderImage: () => JSX.Element;
+};
+
+const Header = ({ HeaderImage, children }: React.PropsWithChildren<HeaderProps>) => {
+	return (
+		<View style={styles.container}>
+			{children}
+			<HeaderImage />
+		</View>
+	);
 };
 
 const styles = StyleSheet.create({

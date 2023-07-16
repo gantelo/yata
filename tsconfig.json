@@ -39,11 +39,12 @@
 		],
 		"baseUrl": ".",
 		"paths": {
+			"@assets": ["assets/*"],
 			"@components": ["src/components/index"],
 			"@icons": ["src/icons/index"],
 			"@screens": ["src/screens/index"],
 			"@shared": ["src/shared/index"],
-			"@styles": ["src/styles/index"],
+			"@styles": ["src/styles/index"]
 		}
 	},
 	"include": ["src", "**/*.ts", "**/*.tsx"],
