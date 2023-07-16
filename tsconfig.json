@@ -39,6 +39,9 @@
 		],
 		"baseUrl": ".",
 		"paths": {
+			"@components": ["src/components/index"],
+			"@icons": ["src/icons/index"],
+			"@screens": ["src/screens/index"],
 			"@shared": ["src/shared/index"],
 			"@styles": ["src/styles/index"],
 		}
