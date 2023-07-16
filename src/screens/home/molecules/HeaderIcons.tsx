@@ -15,7 +15,7 @@ const HeaderIcons = () => {
 
 const styles = StyleSheet.create({
 	headerIcons: {
-		marginTop: verticalScale(35),
+		marginTop: verticalScale(18),
 		height: verticalScale(35),
 		flexDirection: 'row',
 		justifyContent: 'space-between',

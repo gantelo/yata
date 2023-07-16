@@ -18,7 +18,7 @@ const Header = ({ HeaderImage, children }: React.PropsWithChildren<HeaderProps>)
 
 const styles = StyleSheet.create({
 	container: {
-		height: verticalScale(323 - 50),
+		height: verticalScale(270),
 		backgroundColor: Colors.bg.funk,
 		paddingHorizontal: Sizes.margin.md,
 	},

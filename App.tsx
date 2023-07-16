@@ -20,7 +20,7 @@ function App(): JSX.Element {
 const styles = StyleSheet.create({
 	statusBar: {
 		backgroundColor: Colors.bg.funk,
-		height: 50,
+		flexBasis: 1,
 	},
 });
 

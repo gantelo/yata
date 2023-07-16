@@ -12,7 +12,7 @@ const Boxes = () => (
 		<Rect width="11.0714" height="11.0714" rx="2" fill={Colors.secondary.normal} />
 		<Rect x="13.9287" y="13.9286" width="11.0714" height="11.0714" rx="2" fill={Colors.secondary.normal} />
 		<Rect y="13.9286" width="11.0714" height="11.0714" rx="2" fill={Colors.secondary.normal} />
-		<Rect x="13.9287" width="11.0714" height="11.0714" rx="2" fill={Colors.secondary.normal} fill-opacity="0.6" />
+		<Rect x="13.9287" width="11.0714" height="11.0714" rx="2" fill={Colors.secondary.normal} fillOpacity="0.6" />
 	</Svg>
 );
 
