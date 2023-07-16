@@ -1,4 +1,4 @@
-import { HomeHeader } from './components';
+import { HomeHeader } from './templates';
 
 const Home = () => {
 	return <HomeHeader />;
