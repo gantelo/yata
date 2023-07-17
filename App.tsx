@@ -1,27 +1,8 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, StyleSheet, View } from 'react-native';
-
-import { Home } from '@screens';
-import { Colors } from '@styles';
+import MainNavigator from 'src/navigation/MainNavigator';
 
 function App(): JSX.Element {
-	return (
-		<>
-			<View style={styles.statusBar}>
-				<StatusBar barStyle={'dark-content'} backgroundColor={Colors.bg.funk} />
-			</View>
-			<SafeAreaView>
-				<Home />
-			</SafeAreaView>
-		</>
-	);
+	return <MainNavigator />;
 }
-
-const styles = StyleSheet.create({
-	statusBar: {
-		backgroundColor: Colors.bg.funk,
-		flexBasis: 1,
-	},
-});
 
 export default App;
