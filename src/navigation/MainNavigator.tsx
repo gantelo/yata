@@ -14,7 +14,7 @@ const MainNavigator = () => {
 			<StatusBar barStyle={'dark-content'} backgroundColor={Colors.bg.funk} />
 
 			<Stack.Navigator>
-				<Stack.Screen name="Main" component={BottomTabNavigator} options={{ headerShown: false }} />
+				<Stack.Screen name="MainNavigator" component={BottomTabNavigator} options={{ headerShown: false }} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	);

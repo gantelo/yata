@@ -9,6 +9,8 @@ import { ProfileStackNavigator } from './ProfileNavigator';
 
 const Tab = createBottomTabNavigator();
 
+const tabBarIconStyle = { marginTop: 5 };
+
 export const BottomTabNavigator = () => {
 	return (
 		<Tab.Navigator
@@ -24,12 +26,17 @@ export const BottomTabNavigator = () => {
 				options={{
 					tabBarLabel: 'Home',
 					tabBarIcon: ({ color }) => <Home color={color} />,
+					tabBarIconStyle,
 				}}
 			/>
 			<Tab.Screen
 				name="ChatTab"
 				component={ChatStackNavigator}
-				options={{ tabBarLabel: 'Chat', tabBarIcon: ({ color }) => <Chat color={color} /> }}
+				options={{
+					tabBarLabel: 'Chat',
+					tabBarIcon: ({ color }) => <Chat color={color} />,
+					tabBarIconStyle,
+				}}
 			/>
 			<Tab.Screen
 				name="BookingsTab"
@@ -37,12 +44,17 @@ export const BottomTabNavigator = () => {
 				options={{
 					tabBarLabel: 'Bookings',
 					tabBarIcon: ({ color }) => <Bookings color={color} />,
+					tabBarIconStyle,
 				}}
 			/>
 			<Tab.Screen
 				name="ProfileTab"
 				component={ProfileStackNavigator}
-				options={{ tabBarLabel: 'Profile', tabBarIcon: ({ color }) => <Profile color={color} /> }}
+				options={{
+					tabBarLabel: 'Profile',
+					tabBarIcon: ({ color }) => <Profile color={color} />,
+					tabBarIconStyle,
+				}}
 			/>
 		</Tab.Navigator>
 	);
