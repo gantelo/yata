@@ -1,7 +1,7 @@
 export const Colors = {
 	primary: {
 		normal: '#FF825C',
-		third: '#FF825C',
+		third: '#ff825c89',
 		light: '#FF825C',
 	},
 	secondary: {

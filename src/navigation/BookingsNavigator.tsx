@@ -1,15 +1,16 @@
 import { SafeAreaView, StyleSheet, View } from 'react-native';
 
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Home } from '@screens';
 import { Colors } from '@styles';
 
-import { Stack } from './Stack';
+const BookingsStack = createNativeStackNavigator();
 
-export const UserNavigator = () => {
+export const BookingsStackNavigator = () => {
 	return (
-		<Stack.Navigator>
-			<Stack.Screen
-				name="Home"
+		<BookingsStack.Navigator>
+			<BookingsStack.Screen
+				name="Bookings"
 				component={Home}
 				options={{
 					header: () => (
@@ -19,7 +20,7 @@ export const UserNavigator = () => {
 					),
 				}}
 			/>
-		</Stack.Navigator>
+		</BookingsStack.Navigator>
 	);
 };
 
