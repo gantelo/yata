@@ -44,7 +44,8 @@
 			"@icons": ["src/icons/index"],
 			"@screens": ["src/screens/index"],
 			"@shared": ["src/shared/index"],
-			"@styles": ["src/styles/index"]
+			"@styles": ["src/styles/index"],
+			"@types": ["src/types/index"]
 		}
 	},
 	"include": ["src", "**/*.ts", "**/*.tsx"],

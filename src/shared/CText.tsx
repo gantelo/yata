@@ -15,16 +15,17 @@ const CText = ({
 	color,
 	...rest
 }: React.PropsWithChildren<CTextProps>) => {
+	const style = {
+		...styles.font,
+		color,
+		fontSize: Sizes.fonts.size[fontSize],
+		fontWeight: Sizes.fonts.weight[weight] as never,
+	};
+
+	const mergedStyles = StyleSheet.flatten([styles.font, style, rest.style]);
+
 	return (
-		<Text
-			style={{
-				...styles.font,
-				color,
-				fontSize: Sizes.fonts.size[fontSize],
-				fontWeight: Sizes.fonts.weight[weight] as never,
-			}}
-			{...rest}
-		>
+		<Text {...rest} style={mergedStyles}>
 			{children}
 		</Text>
 	);

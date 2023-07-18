@@ -1,7 +1,12 @@
-import { HomeHeader } from './templates';
+import { HomeCategories, HomeHeader } from './templates';
 
 const Home = () => {
-	return <HomeHeader />;
+	return (
+		<>
+			<HomeHeader />
+			<HomeCategories />
+		</>
+	);
 };
 
 export default Home;
