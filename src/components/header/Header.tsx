@@ -1,6 +1,7 @@
-import { StyleSheet, View } from 'react-native';
-import { verticalScale } from 'src/styles/Sizes';
+import { StyleSheet } from 'react-native';
+import Animated from 'react-native-reanimated';
 
+import { useHomeAnimations } from '@hooks';
 import { Colors, Sizes } from '@styles';
 
 type HeaderProps = {
@@ -8,17 +9,17 @@ type HeaderProps = {
 };
 
 const Header = ({ HeaderImage, children }: React.PropsWithChildren<HeaderProps>) => {
+	const { headerStyles } = useHomeAnimations();
 	return (
-		<View style={styles.container}>
+		<Animated.View style={[styles.container, headerStyles]}>
 			{children}
 			<HeaderImage />
-		</View>
+		</Animated.View>
 	);
 };
 
 const styles = StyleSheet.create({
 	container: {
-		height: verticalScale(270),
 		backgroundColor: Colors.bg.funk,
 		paddingHorizontal: Sizes.margin.md,
 	},

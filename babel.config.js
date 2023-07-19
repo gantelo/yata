@@ -11,6 +11,7 @@ module.exports = {
 					'@assets': './assets',
 					'@components': './src/components',
 					'@data': './src/data',
+					'@hooks': './src/hooks',
 					'@icons': './src/icons',
 					'@screens': './src/screens',
 					'@shared': './src/shared',
@@ -20,5 +21,6 @@ module.exports = {
 			},
 		],
 		'jest-hoist',
+		'react-native-reanimated/plugin',
 	],
 };

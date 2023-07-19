@@ -1,8 +1,11 @@
+import { useHomeAnimations } from '@hooks';
 import { Boxes } from '@icons';
 import { TouchableIcon } from '@shared';
 
 const BoxesButton = () => {
-	return <TouchableIcon Icon={Boxes} />;
+	const { handleShowHeader } = useHomeAnimations();
+
+	return <TouchableIcon Icon={Boxes} onPress={handleShowHeader} />;
 };
 
 export default BoxesButton;

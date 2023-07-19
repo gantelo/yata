@@ -1,14 +1,18 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import Animated from 'react-native-reanimated';
 
+import { useHomeAnimations } from '@hooks';
 import { verticalScale } from '@styles';
 
 import { GetStartedButton } from '../atoms';
 
 const GetStarted = () => {
+	const { getStartedStyles, handleHideHeader } = useHomeAnimations();
+
 	return (
-		<View style={styles.container}>
-			<GetStartedButton />
-		</View>
+		<Animated.View style={[styles.container, getStartedStyles]}>
+			<GetStartedButton onPress={handleHideHeader} />
+		</Animated.View>
 	);
 };
 

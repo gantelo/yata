@@ -1,13 +1,13 @@
 import React from 'react';
-import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
 import { Defs, LinearGradient, Rect, Stop, Svg } from 'react-native-svg';
 
 import { CText } from '@shared';
 import { Colors } from '@styles';
 
-const GetStartedButton = () => {
+const GetStartedButton = ({ ...props }: TouchableOpacityProps) => {
 	return (
-		<TouchableOpacity>
+		<TouchableOpacity {...props}>
 			<View style={styles.textContainer}>
 				<CText weight="semibold" fontSize="md" color={Colors.secondary.normal}>
 					Get Started

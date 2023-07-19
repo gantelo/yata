@@ -3,22 +3,22 @@ import { StyleSheet, View } from 'react-native';
 import { CText } from '@shared';
 import { Sizes } from '@styles';
 
-import { CategoryCarousel } from '../molecules';
+import { RecommendedList } from '../molecules';
 
-const HomeCategories = () => {
+const HomeRecommended = () => {
 	return (
 		<View style={styles.container}>
 			<CText style={styles.textContainer} variant="title">
-				Categories
+				Recommended
 			</CText>
-			<CategoryCarousel />
+			<RecommendedList />
 		</View>
 	);
 };
 
 const styles = StyleSheet.create({
 	container: {
-		marginTop: Sizes.margin.md,
+		marginVertical: Sizes.margin.xs,
 	},
 	textContainer: {
 		marginBottom: Sizes.margin.md,
@@ -26,4 +26,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default HomeCategories;
+export default HomeRecommended;
