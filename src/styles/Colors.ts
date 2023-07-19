@@ -10,6 +10,7 @@ export const Colors = {
 	},
 	bg: {
 		default: '#EFECEF',
+		whitey: '#F9F9F9',
 		funk: '#EDFFD9',
 		root: '#FAFAFA',
 	},

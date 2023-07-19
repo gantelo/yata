@@ -1,14 +1,14 @@
 import { StyleSheet, View } from 'react-native';
 
 import { CText } from '@shared';
-import { Colors, Sizes, verticalScale } from '@styles';
+import { Sizes, verticalScale } from '@styles';
 
 import { CategoryCarousel } from '../molecules';
 
 const HomeCategories = () => {
 	return (
 		<View style={styles.container}>
-			<CText style={styles.textContainer} fontSize="xxl" weight="bold" color={Colors.secondary.normal}>
+			<CText style={styles.textContainer} variant="title">
 				Categories
 			</CText>
 			<CategoryCarousel />

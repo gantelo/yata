@@ -8,6 +8,11 @@ export type Category = {
 
 export const DefaultCategories: Category[] = [
 	{
+		imgSrc: require('@assets/images/default-categories/all.png'),
+		label: 'All',
+		key: 'all-item',
+	},
+	{
 		imgSrc: require('@assets/images/default-categories/cleaning.png'),
 		label: 'Cleaning',
 		key: 'cleaning-item',

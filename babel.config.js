@@ -10,6 +10,7 @@ module.exports = {
 				alias: {
 					'@assets': './assets',
 					'@components': './src/components',
+					'@data': './src/data',
 					'@icons': './src/icons',
 					'@screens': './src/screens',
 					'@shared': './src/shared',

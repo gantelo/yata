@@ -1,22 +1,28 @@
 import { StyleSheet, Text, TextProps } from 'react-native';
 
-import { Sizes } from '@styles';
+import { Colors, Sizes } from '@styles';
 
 type CTextProps = TextProps & {
 	fontSize?: keyof typeof Sizes.fonts.size;
 	weight?: keyof typeof Sizes.fonts.weight;
 	color?: string;
+	variant?: 'title';
 };
 
 const CText = ({
 	fontSize = 'md',
 	weight = 'regular',
+	variant,
 	children,
 	color,
 	...rest
 }: React.PropsWithChildren<CTextProps>) => {
+	// TODO: Expand with other variants
+	color = variant === 'title' ? Colors.secondary.normal : color;
+	fontSize = variant === 'title' ? 'xl' : fontSize;
+	weight = variant === 'title' ? 'bold' : weight;
+
 	const style = {
-		...styles.font,
 		color,
 		fontSize: Sizes.fonts.size[fontSize],
 		fontWeight: Sizes.fonts.weight[weight] as never,

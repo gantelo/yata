@@ -41,6 +41,7 @@
 		"paths": {
 			"@assets": ["assets/*"],
 			"@components": ["src/components/index"],
+			"@data": ["src/data/index"],
 			"@icons": ["src/icons/index"],
 			"@screens": ["src/screens/index"],
 			"@shared": ["src/shared/index"],
