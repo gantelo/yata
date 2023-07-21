@@ -20,7 +20,9 @@ const CategoryItem = ({ imgSrc, onPress, label, active }: CategoryItemProps) => 
 	return (
 		<TouchableOpacity style={[styles.pressContainer, activeOpacity]} activeOpacity={0.2} onPress={handleOnPress}>
 			<View style={styles.container}>
-				<Image source={imgSrc} style={[styles.imgContainer, activeBg]} />
+				<View style={styles.imgContainer}>
+					<Image source={imgSrc} style={[styles.img, activeBg]} />
+				</View>
 				<CText color={Colors.primary.normal} style={styles.textContainer} fontSize="xs">
 					{label}
 				</CText>
@@ -38,12 +40,18 @@ const styles = StyleSheet.create({
 		height: verticalScale(80),
 	},
 	imgContainer: {
-		padding: verticalScale(16),
-		width: verticalScale(65),
-		height: verticalScale(65),
+		alignItems: 'center',
+		justifyContent: 'center',
+		width: verticalScale(70),
+		height: verticalScale(70),
 		borderRadius: 99,
+		backgroundColor: 'white',
 		borderColor: Colors.primary.normal,
 		borderWidth: 0.5,
+	},
+	img: {
+		width: verticalScale(35),
+		height: verticalScale(35),
 	},
 	textContainer: {
 		marginTop: 5,
