@@ -1,6 +1,6 @@
 //#region TYPES
 
-export type { BaseContactCard } from './ContactCard';
+export type { BaseContactCard, RecommendedCardModel } from './ContactCard';
 export type { CategoryPicker, Category } from './Categories';
 
 //#endregion

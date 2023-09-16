@@ -1,8 +1,6 @@
-import { BaseContactCard } from 'src/types/ContactCard';
+import { Categories, RecommendedCardModel } from '@types';
 
-import { Categories } from '@types';
-
-export const BaseContactCardList: BaseContactCard[] = [
+export const BaseContactCardList: RecommendedCardModel[] = [
 	{
 		id: '1',
 		name: 'Home Cleaning',
@@ -10,6 +8,7 @@ export const BaseContactCardList: BaseContactCard[] = [
 		type: Categories.Cleaning,
 		rating: 3.2,
 		alias: 'Juan pedro',
+		price: 24,
 	},
 	{
 		id: '2',

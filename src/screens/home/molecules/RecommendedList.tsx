@@ -1,12 +1,13 @@
 import { FlatList, ListRenderItemInfo, StyleSheet, View } from 'react-native';
-import { BaseContactCardTemplate } from 'src/components/contactCard';
+import { RecommendedContactCard } from 'src/components/contactCard';
 import { BaseContactCardList } from 'src/mocks/BaseContactCardList';
 
-import { BaseContactCard } from '@types';
+import { verticalScale } from '@styles';
+import { RecommendedCardModel } from '@types';
 
 const RecommendedList = () => {
-	const renderContactCard = ({ item }: ListRenderItemInfo<BaseContactCard>) => {
-		return <BaseContactCardTemplate baseCard={item} />;
+	const renderContactCard = ({ item }: ListRenderItemInfo<RecommendedCardModel>) => {
+		return <RecommendedContactCard {...item} />;
 	};
 
 	return (
@@ -15,7 +16,7 @@ const RecommendedList = () => {
 				data={BaseContactCardList}
 				renderItem={renderContactCard}
 				keyExtractor={(item) => item.id}
-				showsHorizontalScrollIndicator={false}
+				showsVerticalScrollIndicator={false}
 			/>
 		</View>
 	);
@@ -24,6 +25,7 @@ const RecommendedList = () => {
 const styles = StyleSheet.create({
 	container: {
 		height: '100%',
+		paddingBottom: verticalScale(300),
 	},
 });
 

@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
 
 import { horizontalScale, Sizes, verticalScale } from '@styles';
 import { BaseContactCard } from '@types';
@@ -8,21 +8,25 @@ import { CardImage } from '../molecules';
 
 type BaseContactCardProps = {
 	baseCard: BaseContactCard;
+	children?: React.ReactNode;
 };
 
-const BaseContactCardTemplate = ({ baseCard }: BaseContactCardProps) => {
+const BaseContactCardTemplate = ({ baseCard, children }: BaseContactCardProps) => {
 	return (
-		<View style={styles.container}>
+		<TouchableOpacity style={styles.container} activeOpacity={0.5}>
 			<CardImage imgSrc={baseCard.imgSrc} type={baseCard.type} />
 			<View style={styles.contentContainer}>
-				<CardRating rating={baseCard.rating} />
-				<CardInfoText
-					primaryName={baseCard.name}
-					location={baseCard.location}
-					secondaryName={baseCard.alias}
-				/>
+				<View>
+					<CardRating rating={baseCard.rating} />
+					<CardInfoText
+						primaryName={baseCard.name}
+						location={baseCard.location}
+						secondaryName={baseCard.alias}
+					/>
+				</View>
+				<View>{children}</View>
 			</View>
-		</View>
+		</TouchableOpacity>
 	);
 };
 
@@ -31,7 +35,7 @@ const styles = StyleSheet.create({
 		backgroundColor: 'white',
 		height: verticalScale(124),
 		margin: horizontalScale(21),
-		marginVertical: verticalScale(12),
+		marginVertical: verticalScale(8),
 		borderRadius: Sizes.border.default,
 		borderTopLeftRadius: Sizes.border.lg,
 		borderBottomLeftRadius: Sizes.border.lg,
@@ -41,6 +45,9 @@ const styles = StyleSheet.create({
 	contentContainer: {
 		paddingHorizontal: verticalScale(20),
 		paddingVertical: verticalScale(14),
+		display: 'flex',
+		justifyContent: 'space-between',
+		flex: 1,
 	},
 });
 

@@ -1,1 +1,1 @@
-export { default as BaseContactCardTemplate } from './templates/BaseContactCard';
+export { default as RecommendedContactCard } from './RecommendedContactCard';
