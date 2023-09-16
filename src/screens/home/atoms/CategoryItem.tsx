@@ -2,9 +2,9 @@ import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 
 import { CText } from '@shared';
 import { Colors, verticalScale } from '@styles';
-import { Category } from '@types';
+import { CategoryPicker } from '@types';
 
-type CategoryItemProps = Omit<Category, 'key'> & {
+type CategoryItemProps = Omit<CategoryPicker, 'key'> & {
 	onPress?: (label: string) => void;
 	active?: boolean;
 };
