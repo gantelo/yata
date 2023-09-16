@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 		marginVertical: Sizes.margin.xs,
 	},
 	textContainer: {
-		marginBottom: Sizes.margin.md,
+		marginBottom: Sizes.margin.xs,
 		marginLeft: Sizes.margin.md,
 	},
 });

@@ -4,7 +4,7 @@ import { useRecoilState } from 'recoil';
 
 import { currentCategoryState } from '@data';
 import { verticalScale } from '@styles';
-import { Category, DefaultCategories } from '@types';
+import { CategoryPicker, DefaultCategories } from '@types';
 
 import { CategoryItem } from '../atoms';
 
@@ -18,7 +18,7 @@ const CategoryCarousel = () => {
 		ref.current?.scrollToIndex({ index, animated: true });
 	};
 
-	const renderCategoryItem = (props: ListRenderItemInfo<Category>) => {
+	const renderCategoryItem = (props: ListRenderItemInfo<CategoryPicker>) => {
 		const { item } = props;
 
 		return (
