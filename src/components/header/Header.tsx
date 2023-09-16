@@ -10,6 +10,7 @@ type HeaderProps = {
 
 const Header = ({ HeaderImage, children }: React.PropsWithChildren<HeaderProps>) => {
 	const { headerStyles } = useHomeAnimations();
+
 	return (
 		<Animated.View style={[styles.container, headerStyles]}>
 			{children}
