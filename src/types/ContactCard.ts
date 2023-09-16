@@ -9,3 +9,7 @@ export type BaseContactCard = {
 	rating?: number;
 	type: Category;
 };
+
+export type RecommendedCardModel = BaseContactCard & {
+	price?: number;
+};
