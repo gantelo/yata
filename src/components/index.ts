@@ -1,2 +1,3 @@
-export { default as Header } from './header/Header';
-export { HeaderContext } from './header/Context';
+export { default as Header } from './homeHeader/Header';
+export { HeaderContext } from './homeHeader/Context';
+export { MidHeader } from './headers';
