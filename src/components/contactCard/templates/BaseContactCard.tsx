@@ -8,12 +8,13 @@ import { CardImage } from '../molecules';
 
 type BaseContactCardProps = {
 	baseCard: BaseContactCard;
+	onCardPress?: () => void;
 	children?: React.ReactNode;
 };
 
-const BaseContactCardTemplate = ({ baseCard, children }: BaseContactCardProps) => {
+const BaseContactCardTemplate = ({ baseCard, children, onCardPress }: BaseContactCardProps) => {
 	return (
-		<TouchableOpacity style={styles.container} activeOpacity={0.5}>
+		<TouchableOpacity style={styles.container} activeOpacity={0.5} onPress={onCardPress}>
 			<CardImage imgSrc={baseCard.imgSrc} type={baseCard.type} />
 			<View style={styles.contentContainer}>
 				<View>
