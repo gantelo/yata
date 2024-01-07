@@ -1,15 +1,14 @@
 import { MidHeader } from '@components';
 
+import { useAboutContext } from '../Context';
 import { AboutBgImage, HeaderContent } from '../molecules';
 
-type AboutHeaderProps = {
-	title?: string;
-};
+const AboutHeader = () => {
+	const { name } = useAboutContext();
 
-const AboutHeader = ({ title }: AboutHeaderProps) => {
 	return (
 		<MidHeader HeaderImage={AboutBgImage}>
-			<HeaderContent title={title} />
+			<HeaderContent title={name} />
 		</MidHeader>
 	);
 };

@@ -1,19 +1,9 @@
-import { ImageSourcePropType, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { ImageFallback } from '@shared';
 import { verticalScale } from '@styles';
-import { Categories, Category } from '@types';
-
-const getFallbackImage = (type: Category): ImageSourcePropType => {
-	switch (type) {
-		case Categories.Cleaning:
-			return require('@assets/images/fallbacks/cleaner.png');
-		case Categories.Painting:
-			return require('@assets/images/fallbacks/painter.png');
-		default:
-			return require('@assets/images/fallbacks/cleaner.png');
-	}
-};
+import { Category } from '@types';
+import { getFallbackImage } from '@utils';
 
 type CardFallbackImageProps = {
 	type: Category;

@@ -1,18 +1,30 @@
-import { useRoute } from '@react-navigation/native';
-import { AboutScreenRouteProp } from '@types';
+import React, { memo, useEffect, useState } from 'react';
+import { mockService } from 'src/mocks/ServiceDude';
 
-import { AboutHeader } from './templates';
+import { useRoute } from '@react-navigation/native';
+import { AboutScreenRouteProp, Service } from '@types';
+
+import { AboutContext } from './Context';
+import { AboutGlance, AboutHeader } from './templates';
 
 const About = () => {
-	const {
-		params: { title },
-	} = useRoute<AboutScreenRouteProp>();
+	const { params } = useRoute<AboutScreenRouteProp>();
+	const [service, setCurrentService] = useState<Service>(params as unknown as Service);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setCurrentService(mockService);
+		}, 900);
+	}, [params.id]);
 
 	return (
-		<>
-			<AboutHeader title={title} />
-		</>
+		<AboutContext.Provider value={service}>
+			<>
+				<AboutHeader />
+				<AboutGlance />
+			</>
+		</AboutContext.Provider>
 	);
 };
 
-export default About;
+export default memo(About);

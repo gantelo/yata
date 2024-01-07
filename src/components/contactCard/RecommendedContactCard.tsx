@@ -17,7 +17,7 @@ const RecommendedContactCard = (props: RecommendedCardModel) => {
 	};
 
 	const handleNavigateToAbout = () => {
-		navigation.navigate(Routes.About, { id: baseCard.id, title: baseCard.name });
+		navigation.navigate(Routes.About, baseCard);
 	};
 
 	return (
