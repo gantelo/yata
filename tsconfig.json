@@ -1,5 +1,5 @@
 {
-	"extends": "@tsconfig/react-native/tsconfig.json",
+	"extends": "@react-native/typescript-config/tsconfig.json",
 	"compilerOptions": {
 		"target": "esnext",
 		"types": ["react-native", "jest"],
@@ -25,8 +25,8 @@
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"noFallthroughCasesInSwitch": true,
-		"module": "esnext",
-		"moduleResolution": "node",
+		"module": "NodeNext",
+		"moduleResolution": "nodenext",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": true,
