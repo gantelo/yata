@@ -10,15 +10,18 @@ import { AboutGlance, AboutHeader } from './templates';
 const About = () => {
 	const { params } = useRoute<AboutScreenRouteProp>();
 	const [service, setCurrentService] = useState<Service>(params as unknown as Service);
+	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
 		setTimeout(() => {
+			setLoading(true);
 			setCurrentService(mockService);
+			setLoading(false);
 		}, 900);
 	}, [params.id]);
 
 	return (
-		<AboutContext.Provider value={service}>
+		<AboutContext.Provider value={{ ...service, loading }}>
 			<>
 				<AboutHeader />
 				<AboutGlance />

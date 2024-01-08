@@ -7,15 +7,15 @@ import { getFallbackImage } from '@utils';
 
 interface GlanceProfilePicProps {
 	imgSrc: string;
-	type: Category;
+	category: Category;
 }
 
-const GlanceProfilePic = ({ imgSrc, type }: GlanceProfilePicProps): React.JSX.Element => {
+const GlanceProfilePic = ({ imgSrc, category }: GlanceProfilePicProps): React.JSX.Element => {
 	return (
 		<View style={styles.container}>
 			<ImageFallback
 				src={imgSrc ? { uri: imgSrc } : undefined}
-				fallbackSrc={getFallbackImage(type)}
+				fallbackSrc={getFallbackImage(category)}
 				styles={styles.img}
 			/>
 		</View>

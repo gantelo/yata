@@ -3,14 +3,15 @@ import { StyleSheet, View } from 'react-native';
 import { Dot } from '@icons';
 import { CText } from '@shared';
 import { Colors } from '@styles';
+import { ServiceType } from '@types';
 
 type GlanceDescriptionProps = {
 	name: string;
-	type: string;
+	serviceType: ServiceType;
 	category: string;
 };
 
-const GlanceDescription = ({ name, type, category }: GlanceDescriptionProps) => {
+const GlanceDescription = ({ name, serviceType, category }: GlanceDescriptionProps) => {
 	return (
 		<View style={styles.container}>
 			<CText weight="bold" color={Colors.secondary.normal} fontSize="lg">
@@ -18,7 +19,7 @@ const GlanceDescription = ({ name, type, category }: GlanceDescriptionProps) => 
 			</CText>
 			<View style={styles.infoContainer}>
 				<CText weight="bold" color={Colors.primary.normal}>
-					{type}
+					{serviceType}
 				</CText>
 				<View style={styles.dot}>
 					<Dot color={Colors.secondary.light} />

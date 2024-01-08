@@ -13,8 +13,8 @@ export type Service = {
 	email: string;
 	phone: string;
 	cost?: [number, number];
-	type: ServiceType;
-	trade: Category;
+	serviceType: ServiceType;
+	category: Category;
 	about: string;
 	rating: number;
 	bookings: number;
