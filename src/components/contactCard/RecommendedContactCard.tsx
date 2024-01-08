@@ -13,11 +13,11 @@ const RecommendedContactCard = (props: RecommendedCardModel) => {
 		alias: props.alias,
 		location: props.location,
 		rating: props.rating,
-		type: props.type,
+		category: props.category,
 	};
 
 	const handleNavigateToAbout = () => {
-		navigation.navigate(Routes.About, { id: baseCard.id, title: baseCard.name });
+		navigation.navigate(Routes.About, { ...baseCard, serviceType: props.serviceType });
 	};
 
 	return (

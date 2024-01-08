@@ -47,7 +47,8 @@
 			"@screens": ["src/screens/index"],
 			"@shared": ["src/shared/index"],
 			"@styles": ["src/styles/index"],
-			"@types": ["src/types/index"]
+			"@types": ["src/types/index"],
+			"@utils": ["src/utils/index"],
 		}
 	},
 	"include": ["src", "**/*.ts", "**/*.tsx"],

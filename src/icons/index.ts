@@ -5,3 +5,4 @@ export { default as Chat } from './Chat';
 export { default as Bookings } from './Bookings';
 export { default as Profile } from './Profile';
 export { default as CaretLeft } from './CaretLeft';
+export { default as Dot } from './Dot';

@@ -1,4 +1,5 @@
 import { Category } from './Categories';
+import { ServiceType } from './Service';
 
 export type BaseContactCard = {
 	id: string;
@@ -7,9 +8,10 @@ export type BaseContactCard = {
 	alias?: string;
 	location: string;
 	rating?: number;
-	type: Category;
+	category: Category;
 };
 
 export type RecommendedCardModel = BaseContactCard & {
 	price?: number;
+	serviceType: ServiceType;
 };
