@@ -1,11 +1,17 @@
 import { StyleSheet, View } from 'react-native';
 
-import { GlanceInfo } from '../molecules';
+import { useAboutContext } from '../Context';
+import { GlanceDescription, GlanceImpression, GlanceProfilePic } from '../molecules';
 
 const AboutGlance = (): React.JSX.Element => {
+	const { category, name, serviceType, alias, rating, bookings, responseTime, loading } = useAboutContext();
+
 	return (
 		<View style={styles.container}>
-			<GlanceInfo />
+			{/* TODO: implement imgSrc */}
+			<GlanceProfilePic imgSrc={''} category={category} />
+			<GlanceDescription name={alias ?? name} serviceType={serviceType} category={category} />
+			<GlanceImpression rating={rating} bookings={bookings} responseTime={responseTime} loading={loading} />
 		</View>
 	);
 };
@@ -13,9 +19,9 @@ const AboutGlance = (): React.JSX.Element => {
 const styles = StyleSheet.create({
 	container: {
 		display: 'flex',
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 		alignItems: 'center',
-		marginTop: 20,
+		top: -30,
 	},
 });
 

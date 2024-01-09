@@ -1,4 +1,5 @@
 export { default as AboutTitle } from './AboutTitle';
 export { default as Back } from './Back';
-export { default as GlanceProfilePic } from './GlanceProfilePic';
-export { default as GlanceDescription } from './GlanceDescription';
+export { default as DescriptionName } from './DescriptionName';
+export { default as DescriptionInfo } from './DescriptionInfo';
+export { default as Impression } from './Impression';

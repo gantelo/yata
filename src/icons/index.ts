@@ -6,3 +6,6 @@ export { default as Bookings } from './Bookings';
 export { default as Profile } from './Profile';
 export { default as CaretLeft } from './CaretLeft';
 export { default as Dot } from './Dot';
+export { default as Star } from './Star';
+export { default as Booking } from './Booking';
+export { default as Clock } from './Clock';

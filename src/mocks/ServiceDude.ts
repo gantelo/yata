@@ -10,7 +10,7 @@ export const mockService: Service = {
 	serviceType: ServiceType.Individual,
 	category: Categories.Cleaning,
 	about: 'This is a mock service',
-	rating: 5,
+	rating: '4.2',
 	bookings: 10,
 	responseTime: 1,
 	distance: 1,

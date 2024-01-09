@@ -6,6 +6,7 @@ export const Colors = {
 	},
 	secondary: {
 		normal: '#493C53',
+		normalLight: '#705C70',
 		light: '#917DA1',
 	},
 	bg: {
@@ -14,4 +15,7 @@ export const Colors = {
 		funk: '#EDFFD9',
 		root: '#FAFAFA',
 	},
-};
+	misc: {
+		starYellow: '#E1AD66',
+	},
+} as const;

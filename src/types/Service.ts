@@ -16,7 +16,7 @@ export type Service = {
 	serviceType: ServiceType;
 	category: Category;
 	about: string;
-	rating: number;
+	rating: string;
 	bookings: number;
 	responseTime: number;
 	distance: number;

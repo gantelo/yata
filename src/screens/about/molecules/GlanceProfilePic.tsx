@@ -39,4 +39,5 @@ const styles = StyleSheet.create({
 		height: verticalScale(65),
 	},
 });
+
 export default GlanceProfilePic;
