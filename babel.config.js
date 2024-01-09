@@ -17,6 +17,7 @@ module.exports = {
 					'@shared': './src/shared',
 					'@styles': './src/styles',
 					'@types': './src/types',
+					'@utils': './src/utils',
 				},
 			},
 		],

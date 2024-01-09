@@ -1,5 +1,7 @@
 import { NavigationProp, RouteProp } from '@react-navigation/native';
 
+import { RecommendedCardModel } from './ContactCard';
+
 export const Routes = {
 	MainNavigator: 'MainNavigator',
 	About: 'About',
@@ -10,10 +12,7 @@ export const Routes = {
  */
 export type StackParamList = {
 	[Routes.MainNavigator]: undefined;
-	[Routes.About]: {
-		id: string;
-		title: string;
-	};
+	[Routes.About]: RecommendedCardModel;
 };
 
 export type AboutScreenProp = NavigationProp<StackParamList, 'About'>;

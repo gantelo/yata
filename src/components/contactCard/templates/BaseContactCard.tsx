@@ -15,7 +15,7 @@ type BaseContactCardProps = {
 const BaseContactCardTemplate = ({ baseCard, children, onCardPress }: BaseContactCardProps) => {
 	return (
 		<TouchableOpacity style={styles.container} activeOpacity={0.5} onPress={onCardPress}>
-			<CardImage imgSrc={baseCard.imgSrc} type={baseCard.type} />
+			<CardImage imgSrc={baseCard.imgSrc} type={baseCard.category} />
 			<View style={styles.contentContainer}>
 				<View>
 					<CardRating rating={baseCard.rating} />

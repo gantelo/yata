@@ -8,7 +8,7 @@
 		"ios": "react-native run-ios --simulator=\"iPhone 15\"",
 		"lint": "eslint .",
 		"format": "prettier --write '**/*.{js,jsx,ts,tsx,css,json}' --config ./.prettierrc",
-		"start": "react-native start",
+		"start": "react-native start --reset-cache",
 		"test": "jest",
 		"postinstall": "patch-package",
 		"pod-install": "RCT_NEW_ARCH_ENABLED=1 bundle exec pod install"

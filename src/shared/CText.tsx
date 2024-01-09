@@ -17,7 +17,6 @@ const CText = ({
 	color,
 	...rest
 }: React.PropsWithChildren<CTextProps>) => {
-	// TODO: Expand with other variants
 	color = variant === 'title' ? Colors.secondary.normal : color;
 	fontSize = variant === 'title' ? 'xl' : fontSize;
 	weight = variant === 'title' ? 'bold' : weight;
