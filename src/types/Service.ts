@@ -19,6 +19,6 @@ export type Service = {
 	rating: string;
 	bookings: number;
 	responseTime: number;
-	distance: number;
+	distance: string;
 	reviews: number;
 };
