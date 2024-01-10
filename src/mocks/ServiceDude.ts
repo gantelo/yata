@@ -9,10 +9,10 @@ export const mockService: Service = {
 	cost: [100, 200],
 	serviceType: ServiceType.Individual,
 	category: Categories.Cleaning,
-	about: 'This is a mock service',
+	about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a massa porta arcu viverra tristique. Maecenas luctus pellentesque',
 	rating: '4.2',
 	bookings: 10,
 	responseTime: 1,
-	distance: 1,
+	distance: '1.2 km',
 	reviews: 20,
 };

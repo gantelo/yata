@@ -3,11 +3,12 @@ import { StyleSheet, View } from 'react-native';
 import { mockService } from 'src/mocks/ServiceDude';
 
 import { useRoute } from '@react-navigation/native';
+import { HorizontalDivider } from '@shared';
 import { Colors } from '@styles';
 import { AboutScreenRouteProp, Service } from '@types';
 
 import { AboutContext } from './Context';
-import { AboutGlance, AboutHeader } from './templates';
+import { AboutDetails, AboutGlance, AboutHeader } from './templates';
 
 const About = () => {
 	const { params } = useRoute<AboutScreenRouteProp>();
@@ -27,6 +28,9 @@ const About = () => {
 			<View style={styles.container}>
 				<AboutHeader />
 				<AboutGlance />
+				<HorizontalDivider />
+				<AboutDetails />
+				<HorizontalDivider />
 			</View>
 		</AboutContext.Provider>
 	);

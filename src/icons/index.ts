@@ -9,3 +9,5 @@ export { default as Dot } from './Dot';
 export { default as Star } from './Star';
 export { default as Booking } from './Booking';
 export { default as Clock } from './Clock';
+export { default as Price } from './Price';
+export { default as Distance } from './Distance';
