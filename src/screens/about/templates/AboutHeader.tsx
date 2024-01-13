@@ -1,4 +1,4 @@
-import { MidHeader } from '@components';
+import { LowHeader } from '@components';
 
 import { useAboutContext } from '../Context';
 import { AboutBgImage, HeaderContent } from '../molecules';
@@ -7,9 +7,9 @@ const AboutHeader = () => {
 	const { name } = useAboutContext();
 
 	return (
-		<MidHeader HeaderImage={AboutBgImage}>
+		<LowHeader HeaderImage={AboutBgImage}>
 			<HeaderContent title={name} />
-		</MidHeader>
+		</LowHeader>
 	);
 };
 

@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native';
 
-import { CText } from '@shared';
-import { Colors, verticalScale } from '@styles';
+import { Subtitle } from '@shared';
+import { verticalScale } from '@styles';
 
 import { useAboutContext } from '../Context';
 import { DetailsInfo, DetailsPrompt } from '../molecules';
@@ -11,9 +11,7 @@ const AboutDetails = () => {
 
 	return (
 		<View style={styles.container}>
-			<CText fontSize="xl" weight="semibold" color={Colors.secondary.normal}>
-				About {alias}
-			</CText>
+			<Subtitle>{`About ${alias}`}</Subtitle>
 			<DetailsPrompt about={about} />
 			<DetailsInfo distance={distance} cost={cost} />
 		</View>

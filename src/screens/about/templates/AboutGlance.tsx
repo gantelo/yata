@@ -1,5 +1,7 @@
 import { StyleSheet, View } from 'react-native';
 
+import { verticalScale } from '@styles';
+
 import { useAboutContext } from '../Context';
 import { GlanceDescription, GlanceImpression, GlanceProfilePic } from '../molecules';
 
@@ -21,7 +23,7 @@ const styles = StyleSheet.create({
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
-		top: -30,
+		paddingVertical: verticalScale(20),
 	},
 });
 
