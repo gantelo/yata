@@ -11,3 +11,4 @@ export { default as Booking } from './Booking';
 export { default as Clock } from './Clock';
 export { default as Price } from './Price';
 export { default as Distance } from './Distance';
+export { default as RightArrow } from './RightArrow';

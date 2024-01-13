@@ -5,3 +5,4 @@ export { default as DescriptionInfo } from './DescriptionInfo';
 export { default as Impression } from './Impression';
 export { default as Prompt } from './Prompt';
 export { default as Info } from './Info';
+export { default as Rating } from './Rating';

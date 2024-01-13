@@ -1,4 +1,4 @@
-import { Image } from 'react-native';
+import { RightArrow } from '@icons';
 
 import { PriceContainer } from '../atoms';
 import { BottomCardContent } from '../molecules';
@@ -10,7 +10,7 @@ type RecommendedBottomContentProps = {
 
 const RecommendedBottomContent = ({ price }: RecommendedBottomContentProps) => {
 	const left = <PriceContainer price={price} />;
-	const right = <Image source={require('@assets/images/right_arrow.png')} />;
+	const right = <RightArrow />;
 
 	return <BottomCardContent leftChildren={left} rightChildren={right} />;
 };

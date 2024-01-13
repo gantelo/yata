@@ -20,5 +20,5 @@ export type Service = {
 	bookings: number;
 	responseTime: number;
 	distance: string;
-	reviews: number;
+	reviews?: number;
 };

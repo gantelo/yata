@@ -1,5 +1,5 @@
-import React, { memo, useEffect, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { mockService } from 'src/mocks/ServiceDude';
 
 import { useRoute } from '@react-navigation/native';
@@ -8,7 +8,7 @@ import { Colors } from '@styles';
 import { AboutScreenRouteProp, Service } from '@types';
 
 import { AboutContext } from './Context';
-import { AboutDetails, AboutGlance, AboutHeader } from './templates';
+import { AboutDetails, AboutGlance, AboutHeader, AboutReviews } from './templates';
 
 const About = () => {
 	const { params } = useRoute<AboutScreenRouteProp>();
@@ -27,10 +27,13 @@ const About = () => {
 		<AboutContext.Provider value={{ ...service, loading }}>
 			<View style={styles.container}>
 				<AboutHeader />
-				<AboutGlance />
-				<HorizontalDivider />
-				<AboutDetails />
-				<HorizontalDivider />
+				<ScrollView>
+					<AboutGlance />
+					<HorizontalDivider />
+					<AboutDetails />
+					<HorizontalDivider />
+					<AboutReviews />
+				</ScrollView>
 			</View>
 		</AboutContext.Provider>
 	);
@@ -39,8 +42,9 @@ const About = () => {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		zIndex: 0,
 		backgroundColor: Colors.bg.root,
 	},
 });
 
-export default memo(About);
+export default About;
