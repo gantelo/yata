@@ -1,7 +1,7 @@
 import { SafeAreaView, StyleSheet, View } from 'react-native';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Home } from '@screens';
+import { Chat } from '@screens';
 import { Colors } from '@styles';
 
 const ChatStack = createNativeStackNavigator();
@@ -11,7 +11,7 @@ export const ChatStackNavigator = () => {
 		<ChatStack.Navigator>
 			<ChatStack.Screen
 				name="Chat"
-				component={Home}
+				component={Chat}
 				options={{
 					header: () => (
 						<SafeAreaView style={{ backgroundColor: Colors.bg.funk }}>

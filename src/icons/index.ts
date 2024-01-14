@@ -13,3 +13,5 @@ export { default as Price } from './Price';
 export { default as Distance } from './Distance';
 export { default as RightArrow } from './RightArrow';
 export { default as DefaultPic } from './DefaultPic';
+export { default as Search } from './Search';
+export { default as Clear } from './Clear';
