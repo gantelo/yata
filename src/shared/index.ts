@@ -6,3 +6,4 @@ export { default as VerticalDivider } from './VerticalDivider';
 export { default as HorizontalDivider } from './HorizontalDivider';
 export { default as Subtitle } from './Subtitle';
 export { default as TruncatePrompt } from './TruncatePrompt';
+export { default as SearchInput } from './SearchInput';

@@ -2,7 +2,7 @@ import { StyleSheet, View } from 'react-native';
 
 import { Colors, Sizes, verticalScale } from '@styles';
 
-import { LowHeaderDefaultBg } from './bg/BgImage';
+import { LowHeaderDefaultBg } from './bg/LowBgImage';
 
 type HeaderProps = {
 	HeaderImage?: () => JSX.Element;
