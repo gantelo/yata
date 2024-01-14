@@ -14,7 +14,7 @@ const CText = ({
 	weight = 'regular',
 	variant,
 	children,
-	color,
+	color = Colors.secondary.normal,
 	...rest
 }: React.PropsWithChildren<CTextProps>) => {
 	color = variant === 'title' ? Colors.secondary.normal : color;

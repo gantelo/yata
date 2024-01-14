@@ -2,11 +2,13 @@ import { StyleSheet, View } from 'react-native';
 
 import { Colors, Sizes, verticalScale } from '@styles';
 
+import { LowHeaderDefaultBg } from './bg/BgImage';
+
 type HeaderProps = {
-	HeaderImage: () => JSX.Element;
+	HeaderImage?: () => JSX.Element;
 };
 
-const LowHeader = ({ HeaderImage, children }: React.PropsWithChildren<HeaderProps>) => {
+const LowHeader = ({ HeaderImage = LowHeaderDefaultBg, children }: React.PropsWithChildren<HeaderProps>) => {
 	return (
 		<View style={styles.container}>
 			{children}

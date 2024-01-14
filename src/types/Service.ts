@@ -1,4 +1,5 @@
 import { Category } from './Categories';
+import { Review } from './Reviews';
 
 export enum ServiceType {
 	Individual = 'Individual',
@@ -21,4 +22,5 @@ export type Service = {
 	responseTime: number;
 	distance: string;
 	reviews?: number;
+	bestReview?: Review;
 };

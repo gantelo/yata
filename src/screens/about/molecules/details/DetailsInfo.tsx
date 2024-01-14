@@ -2,7 +2,7 @@ import { View } from 'react-native';
 
 import { Distance, Price } from '@icons';
 
-import { Info } from '../atoms';
+import { Info } from '../../atoms';
 
 type DetailsInfoProps = {
 	distance: string;

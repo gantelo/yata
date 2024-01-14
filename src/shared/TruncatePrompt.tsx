@@ -1,13 +1,13 @@
+import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { useToggle } from '@hooks';
 import { CText } from '@shared';
 import { Colors, verticalScale } from '@styles';
 
-import { Prompt } from '../atoms';
-
-type DetailsPromptProps = {
+type PromptProps = {
 	about: string;
+	maxLength?: number;
 };
 
 const MAX_TRUNCATED_LENGTH = 115;
@@ -19,18 +19,25 @@ const truncateText = (text: string, length: number, isTruncated: boolean) => {
 	return text;
 };
 
-// TODO: Add skeleton loader
-// TODO: Extract Prompt to shared
-const DetailsPrompt = ({ about = '' }: DetailsPromptProps) => {
+//TODO: add animation on isTruncated effect
+const TruncatePrompt = ({ about, maxLength = MAX_TRUNCATED_LENGTH }: PromptProps) => {
 	const [isTruncated, toggleIsTruncated] = useToggle(true);
 
-	const shouldTruncate = MAX_TRUNCATED_LENGTH < about.length;
+	const shouldTruncate = maxLength < about.length;
 	const truncatedAbout = truncateText(about, MAX_TRUNCATED_LENGTH, isTruncated && shouldTruncate);
 
 	return (
 		<TouchableOpacity style={styles.container} onPress={toggleIsTruncated}>
 			<CText fontSize="lg" color={Colors.secondary.normal} style={styles.txt}>
-				<Prompt about={truncatedAbout} shouldTruncate={shouldTruncate} isTruncated={isTruncated} />
+				{truncatedAbout}
+				{shouldTruncate && (
+					<>
+						<CText fontSize="lg" color={Colors.primary.normal} weight="semibold">
+							{'   '}
+							View {isTruncated ? 'More' : 'Less'}
+						</CText>
+					</>
+				)}
 			</CText>
 		</TouchableOpacity>
 	);
@@ -47,4 +54,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default DetailsPrompt;
+export default TruncatePrompt;

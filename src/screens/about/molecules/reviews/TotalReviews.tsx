@@ -3,7 +3,7 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 import { RightArrow } from '@icons';
 import { Colors, Sizes, verticalScale } from '@styles';
 
-import { Rating } from '../atoms';
+import { Rating } from '../../atoms';
 
 type TotalReviewsProps = {
 	rating: string;
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 	rightArrow: {
 		backgroundColor: Colors.bg.default,
 		paddingVertical: 6,
-		paddingHorizontal: 10,
+		paddingHorizontal: 15,
 		borderRadius: Sizes.border.default,
 	},
 });

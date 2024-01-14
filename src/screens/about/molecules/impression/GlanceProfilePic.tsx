@@ -16,7 +16,7 @@ const GlanceProfilePic = ({ imgSrc, category }: GlanceProfilePicProps): React.JS
 			<ImageFallback
 				src={imgSrc ? { uri: imgSrc } : undefined}
 				fallbackSrc={getFallbackImage(category)}
-				styles={styles.img}
+				size={[verticalScale(65), verticalScale(65)]}
 			/>
 		</View>
 	);
@@ -33,10 +33,6 @@ const styles = StyleSheet.create({
 		borderRadius: 99,
 		width: verticalScale(120),
 		height: verticalScale(120),
-	},
-	img: {
-		width: verticalScale(65),
-		height: verticalScale(65),
 	},
 });
 

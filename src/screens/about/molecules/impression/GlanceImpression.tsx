@@ -5,7 +5,7 @@ import { Booking, Clock, Star } from '@icons';
 import { VerticalDivider } from '@shared';
 import { Colors, horizontalScale, verticalScale } from '@styles';
 
-import { Impression } from '../atoms';
+import { Impression } from '../../atoms';
 
 type GlanceImpressionProps = {
 	bookings: number;
