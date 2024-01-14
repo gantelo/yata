@@ -2,7 +2,7 @@ import { StyleSheet, View } from 'react-native';
 
 import { ServiceType } from '@types';
 
-import { DescriptionInfo, DescriptionName } from '../atoms';
+import { DescriptionInfo, DescriptionName } from '../../atoms';
 
 type GlanceDescriptionProps = {
 	name: string;

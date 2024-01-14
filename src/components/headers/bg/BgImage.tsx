@@ -1,6 +1,6 @@
 import { Image, StyleSheet } from 'react-native';
 
-const AboutBgImage = () => {
+export const LowHeaderDefaultBg = () => {
 	return <Image source={require('@assets/images/home_bg2.png')} style={styles.imgBackground} />;
 };
 
@@ -13,5 +13,3 @@ const styles = StyleSheet.create({
 		position: 'absolute',
 	},
 });
-
-export default AboutBgImage;

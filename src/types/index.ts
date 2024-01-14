@@ -5,6 +5,7 @@ export type { CategoryPicker, Category } from './Categories';
 export type { StackParamList, AboutScreenProp, AboutScreenRouteProp } from './Routes';
 export type { Service } from './Service';
 export { ServiceType } from './Service';
+export type { Review } from './Reviews';
 //#endregion
 
 //#region MISC

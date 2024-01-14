@@ -7,14 +7,14 @@ import { useAboutContext } from '../Context';
 import { Review, TotalReviews } from '../molecules';
 
 const AboutReviews = () => {
-	const { rating, reviews } = useAboutContext();
+	const { rating, reviews, bestReview } = useAboutContext();
 
 	return (
 		<View style={styles.container}>
 			<Subtitle>Reviews</Subtitle>
 			<TotalReviews rating={rating} reviews={reviews} />
 			<HorizontalDivider height={1} />
-			<Review />
+			<Review review={bestReview} />
 		</View>
 	);
 };

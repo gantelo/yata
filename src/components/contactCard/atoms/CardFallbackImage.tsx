@@ -1,5 +1,3 @@
-import { StyleSheet } from 'react-native';
-
 import { ImageFallback } from '@shared';
 import { verticalScale } from '@styles';
 import { Category } from '@types';
@@ -15,16 +13,9 @@ const CardFallbackImage = ({ type, imgSrc }: CardFallbackImageProps) => {
 		<ImageFallback
 			src={imgSrc ? { uri: imgSrc } : undefined}
 			fallbackSrc={getFallbackImage(type)}
-			styles={styles.img}
+			size={[verticalScale(65), verticalScale(65)]}
 		/>
 	);
 };
-
-const styles = StyleSheet.create({
-	img: {
-		width: verticalScale(65),
-		height: verticalScale(65),
-	},
-});
 
 export default CardFallbackImage;

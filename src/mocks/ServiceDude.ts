@@ -15,4 +15,13 @@ export const mockService: Service = {
 	responseTime: 1,
 	distance: '1.2 km',
 	reviews: 20,
+	bestReview: {
+		id: '1',
+		name: 'Mock Review',
+		avatar: 'https://picsum.photos/200',
+		rating: '4.8',
+		date: '2021-01-01',
+		comment:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a massa porta arcu viverra tristique. Maecenas luctus pellentesque',
+	},
 };

@@ -27,7 +27,7 @@ const About = () => {
 		<AboutContext.Provider value={{ ...service, loading }}>
 			<View style={styles.container}>
 				<AboutHeader />
-				<ScrollView>
+				<ScrollView showsVerticalScrollIndicator={false}>
 					<AboutGlance />
 					<HorizontalDivider />
 					<AboutDetails />
