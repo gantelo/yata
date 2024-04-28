@@ -1,9 +1,9 @@
-import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { useToggle } from '@hooks';
 import { CText } from '@shared';
 import { Colors, verticalScale } from '@styles';
+import { truncateText } from '@utils';
 
 type PromptProps = {
 	about: string;
@@ -11,13 +11,6 @@ type PromptProps = {
 };
 
 const MAX_TRUNCATED_LENGTH = 115;
-
-const truncateText = (text: string, length: number, isTruncated: boolean) => {
-	if (text.length > length && isTruncated) {
-		return text.slice(0, length) + '...';
-	}
-	return text;
-};
 
 //TODO: add animation on isTruncated effect
 const TruncatePrompt = ({ about, maxLength = MAX_TRUNCATED_LENGTH }: PromptProps) => {

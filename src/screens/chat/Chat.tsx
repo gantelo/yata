@@ -1,9 +1,10 @@
-import { Header } from './templates';
+import { Chats, Header } from './templates';
 
 const Chat = () => {
 	return (
 		<>
 			<Header />
+			<Chats />
 		</>
 	);
 };

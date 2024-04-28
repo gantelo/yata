@@ -6,6 +6,7 @@ export type { StackParamList, AboutScreenProp, AboutScreenRouteProp } from './Ro
 export type { Service } from './Service';
 export { ServiceType } from './Service';
 export type { Review } from './Reviews';
+export type { ChatCard } from './Chats';
 //#endregion
 
 //#region MISC
