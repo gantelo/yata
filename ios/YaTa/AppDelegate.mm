@@ -19,21 +19,21 @@
                            initProps:(NSDictionary *)initProps
 {
   UIView * rootView = [super createRootViewWithBridge:bridge moduleName:moduleName initProps:initProps];
-  
-  // workaround:
-  UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil];
-  UIViewController *vc = [sb instantiateInitialViewController];
-  rootView.backgroundColor = [UIColor colorWithRed: 0.98 green: 0.98 blue: 0.98 alpha: 1.00];
 
   return rootView;
 }
 
-- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
+- (void)customizeRootView:(RCTRootView *)rootView
 {
-  return [self getBundleURL];
+  rootView.backgroundColor = [UIColor colorWithRed: 0.98 green: 0.98 blue: 0.98 alpha: 1.00];
 }
 
-- (NSURL *)getBundleURL
+- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
+{
+  return [self bundleURL];
+}
+
+- (NSURL *)bundleURL
 {
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];

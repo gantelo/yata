@@ -13,8 +13,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		597ADE835A594FEDB861E857 /* sf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2945B5103564FA6928CB611 /* sf.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8A5759FCDFFDAA2DD7058A84 /* libPods-YaTa-YaTaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE5513D083EF73496093D10 /* libPods-YaTa-YaTaTests.a */; };
-		92D1C35247A3C423924B167F /* libPods-YaTa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5315B672FCB185E7E3EA3EAD /* libPods-YaTa.a */; };
+		8EEDD7A2ABDAD47742D9971B /* libPods-YaTa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3FF5CAFCA3163B582CB8 /* libPods-YaTa.a */; };
+		94141723951B328843115628 /* libPods-YaTa-YaTaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C37160E5D639B0149E951088 /* libPods-YaTa-YaTaTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,15 +37,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = YaTa/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = YaTa/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = YaTa/main.m; sourceTree = "<group>"; };
-		271A6F2141FD8FA229317342 /* Pods-YaTa-YaTaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaTa-YaTaTests.release.xcconfig"; path = "Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests.release.xcconfig"; sourceTree = "<group>"; };
-		2C681525200B8516E7BEDF89 /* Pods-YaTa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaTa.release.xcconfig"; path = "Target Support Files/Pods-YaTa/Pods-YaTa.release.xcconfig"; sourceTree = "<group>"; };
-		5315B672FCB185E7E3EA3EAD /* libPods-YaTa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YaTa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EE5513D083EF73496093D10 /* libPods-YaTa-YaTaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YaTa-YaTaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		779B8BAB0BF83B1D67843060 /* Pods-YaTa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaTa.debug.xcconfig"; path = "Target Support Files/Pods-YaTa/Pods-YaTa.debug.xcconfig"; sourceTree = "<group>"; };
+		8019B04E07A1E8AF707B952C /* Pods-YaTa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaTa.debug.xcconfig"; path = "Target Support Files/Pods-YaTa/Pods-YaTa.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = YaTa/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89CF3FF5CAFCA3163B582CB8 /* libPods-YaTa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YaTa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2945B5103564FA6928CB611 /* sf.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = sf.ttf; path = ../assets/fonts/sf.ttf; sourceTree = "<group>"; };
-		CBF8247EC3CCE0A1B930D386 /* Pods-YaTa-YaTaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaTa-YaTaTests.debug.xcconfig"; path = "Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C37160E5D639B0149E951088 /* libPods-YaTa-YaTaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YaTa-YaTaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB2ECFA01067207C7AD22AF /* Pods-YaTa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaTa.release.xcconfig"; path = "Target Support Files/Pods-YaTa/Pods-YaTa.release.xcconfig"; sourceTree = "<group>"; };
+		E7DBC5A8FFA59623431EEC84 /* Pods-YaTa-YaTaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaTa-YaTaTests.release.xcconfig"; path = "Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F148B3DD088772BFB5497917 /* Pods-YaTa-YaTaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YaTa-YaTaTests.debug.xcconfig"; path = "Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A5759FCDFFDAA2DD7058A84 /* libPods-YaTa-YaTaTests.a in Frameworks */,
+				94141723951B328843115628 /* libPods-YaTa-YaTaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D1C35247A3C423924B167F /* libPods-YaTa.a in Frameworks */,
+				8EEDD7A2ABDAD47742D9971B /* libPods-YaTa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5315B672FCB185E7E3EA3EAD /* libPods-YaTa.a */,
-				5EE5513D083EF73496093D10 /* libPods-YaTa-YaTaTests.a */,
+				89CF3FF5CAFCA3163B582CB8 /* libPods-YaTa.a */,
+				C37160E5D639B0149E951088 /* libPods-YaTa-YaTaTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				779B8BAB0BF83B1D67843060 /* Pods-YaTa.debug.xcconfig */,
-				2C681525200B8516E7BEDF89 /* Pods-YaTa.release.xcconfig */,
-				CBF8247EC3CCE0A1B930D386 /* Pods-YaTa-YaTaTests.debug.xcconfig */,
-				271A6F2141FD8FA229317342 /* Pods-YaTa-YaTaTests.release.xcconfig */,
+				8019B04E07A1E8AF707B952C /* Pods-YaTa.debug.xcconfig */,
+				CFB2ECFA01067207C7AD22AF /* Pods-YaTa.release.xcconfig */,
+				F148B3DD088772BFB5497917 /* Pods-YaTa-YaTaTests.debug.xcconfig */,
+				E7DBC5A8FFA59623431EEC84 /* Pods-YaTa-YaTaTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -166,12 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "YaTaTests" */;
 			buildPhases = (
-				469E1CAB623F548F06E827E1 /* [CP] Check Pods Manifest.lock */,
+				EB7730C80898CE1758EDCB6E /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				E1324A7D51136B4B2D42846C /* [CP] Embed Pods Frameworks */,
-				1C7201B854BC9563BB01BF27 /* [CP] Copy Pods Resources */,
+				8527289178FA137C2DBF827C /* [CP] Embed Pods Frameworks */,
+				B976ACA78639C747831DF866 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,14 +187,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "YaTa" */;
 			buildPhases = (
-				836B570CBCA6E4DA7337221B /* [CP] Check Pods Manifest.lock */,
+				3C247F33FAC07219E97F46F3 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				CF3C482F193DD8081860EDB3 /* [CP] Embed Pods Frameworks */,
-				908FA278B521956D37D2EFA2 /* [CP] Copy Pods Resources */,
+				A6CADADD0876E4E6113683E3 /* [CP] Embed Pods Frameworks */,
+				0E5F254CDBA62AA2AFCAE819 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,46 +279,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		1C7201B854BC9563BB01BF27 /* [CP] Copy Pods Resources */ = {
+		0E5F254CDBA62AA2AFCAE819 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-YaTa/Pods-YaTa-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-YaTa/Pods-YaTa-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YaTa/Pods-YaTa-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		469E1CAB623F548F06E827E1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YaTa-YaTaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		836B570CBCA6E4DA7337221B /* [CP] Check Pods Manifest.lock */ = {
+		3C247F33FAC07219E97F46F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,24 +318,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		908FA278B521956D37D2EFA2 /* [CP] Copy Pods Resources */ = {
+		8527289178FA137C2DBF827C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YaTa/Pods-YaTa-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YaTa/Pods-YaTa-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YaTa/Pods-YaTa-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF3C482F193DD8081860EDB3 /* [CP] Embed Pods Frameworks */ = {
+		A6CADADD0876E4E6113683E3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,21 +352,43 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YaTa/Pods-YaTa-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E1324A7D51136B4B2D42846C /* [CP] Embed Pods Frameworks */ = {
+		B976ACA78639C747831DF866 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YaTa-YaTaTests/Pods-YaTa-YaTaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7730C80898CE1758EDCB6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YaTa-YaTaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -443,7 +443,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBF8247EC3CCE0A1B930D386 /* Pods-YaTa-YaTaTests.debug.xcconfig */;
+			baseConfigurationReference = F148B3DD088772BFB5497917 /* Pods-YaTa-YaTaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,7 +471,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 271A6F2141FD8FA229317342 /* Pods-YaTa-YaTaTests.release.xcconfig */;
+			baseConfigurationReference = E7DBC5A8FFA59623431EEC84 /* Pods-YaTa-YaTaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,13 +496,14 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 779B8BAB0BF83B1D67843060 /* Pods-YaTa.debug.xcconfig */;
+			baseConfigurationReference = 8019B04E07A1E8AF707B952C /* Pods-YaTa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = YaTa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,20 +516,25 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = YaTa;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C681525200B8516E7BEDF89 /* Pods-YaTa.release.xcconfig */;
+			baseConfigurationReference = CFB2ECFA01067207C7AD22AF /* Pods-YaTa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = YaTa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,7 +547,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = YaTa;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -550,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -577,6 +588,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
@@ -596,6 +608,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -616,13 +630,8 @@
 					"-DFOLLY_NO_CONFIG",
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
-					" ",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -633,6 +642,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -660,6 +670,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
@@ -672,6 +683,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -691,13 +704,8 @@
 					"-DFOLLY_NO_CONFIG",
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
-					" ",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
