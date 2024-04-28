@@ -46,6 +46,8 @@ export const Sizes = {
 		},
 	},
 	margin: {
+		xxxs: horizontalScale(4),
+		xxs: horizontalScale(8),
 		xs: horizontalScale(12),
 		sm: horizontalScale(16),
 		md: horizontalScale(21),
