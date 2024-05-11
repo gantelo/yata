@@ -6,3 +6,16 @@ export type ChatCard = {
 	time: string;
 	unread: number;
 };
+
+export enum ChatDirection {
+	Left = 'left',
+	Right = 'right',
+}
+
+export type ChatMessage = {
+	id: string;
+	message: string;
+	time: string;
+	direction: ChatDirection;
+	read: boolean;
+};

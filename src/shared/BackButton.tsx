@@ -4,7 +4,7 @@ import { CaretLeft } from '@icons';
 import { useNavigation } from '@react-navigation/native';
 import { TouchableIcon } from '@shared';
 
-const Back = () => {
+const BackButton = () => {
 	const navigation = useNavigation();
 
 	const handleBack = () => {
@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default Back;
+export default BackButton;

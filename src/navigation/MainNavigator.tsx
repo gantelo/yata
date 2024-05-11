@@ -2,7 +2,7 @@ import { SafeAreaView, StatusBar, StyleSheet, View } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { About } from '@screens';
+import { About, ChatDetails } from '@screens';
 import { Colors } from '@styles';
 import { StackParamList } from '@types';
 
@@ -26,6 +26,20 @@ const MainNavigator = () => {
 								<View style={styles.statusBar} />
 							</SafeAreaView>
 						),
+					}}
+				/>
+
+				<Stack.Screen
+					name="ChatDetails"
+					component={ChatDetails}
+					options={{
+						header: () => (
+							<SafeAreaView style={{ backgroundColor: Colors.bg.funk }}>
+								<View style={styles.statusBar} />
+							</SafeAreaView>
+						),
+						gestureDirection: 'vertical',
+						gestureEnabled: false,
 					}}
 				/>
 			</Stack.Navigator>

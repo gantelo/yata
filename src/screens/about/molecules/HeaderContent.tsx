@@ -1,6 +1,8 @@
 import { StyleSheet, View } from 'react-native';
 
-import { AboutTitle, Back } from '../atoms';
+import { BackButton } from '@shared';
+
+import { AboutTitle } from '../atoms';
 
 type HeaderContentProps = {
 	title?: string;
@@ -9,7 +11,7 @@ type HeaderContentProps = {
 const HeaderContent = ({ title }: HeaderContentProps) => {
 	return (
 		<View style={styles.container}>
-			<Back />
+			<BackButton />
 			<AboutTitle title={title} />
 			<View style={styles.middler} />
 		</View>

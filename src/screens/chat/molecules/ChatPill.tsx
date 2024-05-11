@@ -1,15 +1,22 @@
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
+import { useNavigation } from '@react-navigation/native';
 import { Sizes, verticalScale } from '@styles';
-import { ChatCard } from '@types';
+import { ChatCard, ChatDetailsProp, Routes } from '@types';
 
 import { ChatPeek, ChatProfileImage, ChatStatus } from '../atoms';
 
 type ChatPillProps = ChatCard;
 
-const ChatPill = ({ name, lastMessage, time, unread, avatar }: ChatPillProps) => {
+const ChatPill = ({ id, name, lastMessage, time, unread, avatar }: ChatPillProps) => {
+	const navigation = useNavigation<ChatDetailsProp>();
+
+	const handleNavigateToChatDetails = () => {
+		navigation.navigate(Routes.ChatDetails, { id, name, avatar });
+	};
+
 	return (
-		<TouchableOpacity style={styles.container} activeOpacity={0.6}>
+		<TouchableOpacity style={styles.container} activeOpacity={0.6} onPress={handleNavigateToChatDetails}>
 			<ChatProfileImage src={avatar} />
 			<ChatPeek lastMessage={lastMessage} name={name} />
 			<ChatStatus time={time} unread={unread} />

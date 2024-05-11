@@ -1,5 +1,4 @@
 export { default as AboutTitle } from './details/AboutTitle';
-export { default as Back } from './Back';
 export { default as DescriptionName } from './impression/DescriptionName';
 export { default as DescriptionInfo } from './impression/DescriptionInfo';
 export { default as Impression } from './impression/Impression';
